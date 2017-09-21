@@ -24,7 +24,7 @@
         android:layout_centerInParent="true"
         android:layout_toRightOf="@+id/imageView5"
         android:id="@+id/dateRamadan"
-        android:textColor="@color/background_text_color"
+        android:textColor="@color/background_text_color2"
         />
 
     <ImageView
@@ -45,7 +45,7 @@
         android:layout_centerInParent="true"
         android:layout_marginRight="10dp"
         android:layout_toLeftOf="@+id/imageView6"
-        android:textColor="@color/background_text_color"
+        android:textColor="@color/background_text_color2"
         android:id="@+id/seharRamadan"
         />
     <ImageView
@@ -65,7 +65,7 @@
         android:text="Aftar"
         android:layout_centerInParent="true"
         android:layout_alignParentRight="true"
-        android:textColor="@color/background_text_color"
+        android:textColor="@color/background_text_color2"
         android:id="@+id/aftarRamadan"
         />
 </RelativeLayout>

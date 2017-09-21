@@ -16,27 +16,27 @@
 				<TextView android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
                     android:text="@string/fajr"
-                    android:textColor="@color/background_text_color"
+                    android:textColor="@color/background_text_color2"
 					android:layout_weight="1"
                     android:gravity="fill_vertical" />
 				<TextView android:layout_width="wrap_content"
-                    android:textColor="@color/background_text_color"
+                    android:textColor="@color/background_text_color2"
 					android:layout_height="wrap_content" android:text="@string/sunrise"
 					android:layout_weight="1" android:gravity="fill_vertical" />
 				<TextView android:layout_width="wrap_content"
-                    android:textColor="@color/background_text_color"
+                    android:textColor="@color/background_text_color2"
 					android:layout_height="wrap_content" android:text="@string/dhuhr"
 					android:layout_weight="1" android:gravity="fill_vertical" />
 				<TextView android:layout_width="wrap_content"
-                    android:textColor="@color/background_text_color"
+                    android:textColor="@color/background_text_color2"
 					android:layout_height="wrap_content" android:text="@string/asr"
 					android:layout_weight="1" android:gravity="fill_vertical" />
 				<TextView android:layout_width="wrap_content"
-                    android:textColor="@color/background_text_color"
+                    android:textColor="@color/background_text_color2"
 					android:layout_height="wrap_content" android:text="@string/maghrib"
 					android:layout_weight="1" android:gravity="fill_vertical" />
 				<TextView android:layout_width="wrap_content"
-                    android:textColor="@color/background_text_color"
+                    android:textColor="@color/background_text_color2"
 					android:layout_height="wrap_content" android:text="@string/ishaa"
 					android:layout_weight="1" android:gravity="fill_vertical" />
 			</LinearLayout>

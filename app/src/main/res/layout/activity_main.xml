@@ -3,7 +3,7 @@
     xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back"
+    android:background="@drawable/back2"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -20,7 +20,7 @@
         android:text="Home"
         android:layout_marginTop="20dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@color/background_text_color"
+        android:textColor="@color/background_text_color2"
         android:textSize="30dp"
         android:textIsSelectable="true"
         android:textStyle="bold" />
@@ -33,7 +33,7 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"
         android:text="Time"
-        android:textColor="@color/background_text_color"
+        android:textColor="@color/background_text_color2"
         android:layout_marginTop="5dp" />
 
     <ScrollView
@@ -51,113 +51,174 @@
             android:layout_height="match_parent">
 
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_alignParentLeft="false"
                 android:layout_alignParentStart="false"
                 android:id="@+id/rl6kalma"
+                android:orientation="vertical"
+                android:background="@drawable/button1"
                 >
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="70dp"
                     android:id="@+id/iv6kalma"
                     android:clickable="true"
                     android:onClick="Clicker"
                     android:layout_centerHorizontal="true"
-                    android:src="@drawable/kalmaicon" />
-            </RelativeLayout>
+                    android:src="@drawable/icons8_ramadan_1004" />
 
-            <RelativeLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Kalam Of Islam"
+                    android:textColor="@color/background_text_color2"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_above="@+id/relativeLayout"
                 android:layout_centerHorizontal="true"
-                android:id="@+id/relativeLayout5">
+                android:id="@+id/relativeLayout5"
+                android:orientation="vertical"
+                android:background="@drawable/button1">
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="70dp"
                     android:clickable="true"
                     android:onClick="Clicker"
                     android:id="@+id/ivramadantiming"
                     android:layout_centerHorizontal="true"
-                    android:src="@drawable/ramadantimeicon" />
-            </RelativeLayout>
+                    android:src="@drawable/icons8_ramadan_1002" />
 
-            <RelativeLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Ramadan Time"
+                    android:textColor="@color/background_text_color2"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_above="@+id/relativeLayout"
                 android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true">
+                android:orientation="vertical"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/button1">
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="70dp"
                     android:id="@+id/ivtasbeeh"
                     android:clickable="true"
                     android:onClick="Clicker"
                     android:layout_centerHorizontal="true"
-                    android:src="@drawable/tasbeehicon" />
-            </RelativeLayout>
-            <RelativeLayout
+                    android:src="@drawable/if_tesbih_56319"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Tasbeeh"
+                    android:textColor="@color/background_text_color2"
+                    />
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="33dp"
                 android:id="@+id/relativeLayout"
+                android:orientation="vertical"
                 android:layout_below="@+id/rl6kalma"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true">
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button1">
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="70dp"
                     android:clickable="true"
                     android:onClick="Clicker"
                     android:id="@+id/ivduas"
                     android:layout_centerHorizontal="true"
-                    android:src="@drawable/duaicon" />
-            </RelativeLayout>
+                    android:src="@drawable/if_seccade_56318" />
 
-            <RelativeLayout
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Doaa"
+                    android:textColor="@color/background_text_color2"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:id="@+id/relativeLayout2"
                 android:layout_alignTop="@+id/relativeLayout"
                 android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:background="@drawable/button1"
                 >
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="70dp"
                     android:id="@+id/ivqibladirction"
                     android:clickable="true"
                     android:onClick="Clicker"
                     android:layout_centerHorizontal="true"
-                    android:src="@drawable/qiblaicon" />
-            </RelativeLayout>
+                    android:src="@drawable/if_kaba_56313" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Qibla Direction"
+                    android:textColor="@color/background_text_color2"
+                    />
+            </LinearLayout>
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:id="@+id/relativeLayout3"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
+                android:orientation="vertical"
+                android:background="@drawable/button1"
                 android:layout_alignBottom="@+id/relativeLayout2">
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="70dp"
                     android:id="@+id/ivprayertiming"
                     android:clickable="true"
                     android:onClick="Clicker"
                     android:layout_centerHorizontal="true"
-                    android:src="@drawable/prayertimeicon" />
+                    android:src="@drawable/if_minber_56317" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Prayer Timings"
+                    android:textColor="@color/background_text_color2"
+                    />
 
-            </RelativeLayout>
-            <RelativeLayout
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="100dp"
                 android:layout_height="100dp"
 
@@ -166,36 +227,59 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_marginBottom="200dp"
-                android:layout_marginTop="33dp">
+                android:layout_marginTop="33dp"
+                android:orientation="vertical"
+                android:background="@drawable/button1">
 
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="70dp"
                     android:id="@+id/ivlearnquran"
                     android:clickable="true"
                     android:onClick="Clicker"
-                    android:src="@drawable/learnquranicon" />
-            </RelativeLayout>
+                    android:src="@drawable/if_kuran_56315" />
 
-            <RelativeLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Learn Quran"
+                    android:textColor="@color/background_text_color2"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:id="@+id/relativeLayout6"
                 android:layout_alignBottom="@+id/relativeLayout4"
                 android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:background="@drawable/button1"
                 >
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="70dp"
                     android:id="@+id/ivmosquenearby"
                     android:clickable="true"
                     android:onClick="Clicker"
                     android:layout_centerHorizontal="true"
-                    android:src="@drawable/mosque"
+                    android:src="@drawable/if_kubbetussahra_56314"
                      />
-            </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Mosque Near"
+                    android:textColor="@color/background_text_color2"
+                    />
+
+            </LinearLayout>
 
         </RelativeLayout>
     </ScrollView>

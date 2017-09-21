@@ -3,6 +3,7 @@ package com.futureapppspk.quran_e_pak.surahrecitation;
 import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.AssetManager;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.net.Uri;
@@ -12,13 +13,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.content.res.AssetManager;
 import android.widget.RelativeLayout;
-
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 
 import com.futureapppspk.quran_e_pak.R;
 import com.futureapppspk.quran_e_pak.universal.Utils;
@@ -26,6 +21,11 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 
 /**
  * Created by Shahzad Ahmad on 22-Jun-15.
@@ -156,16 +156,16 @@ public  void playerChecker(){
             player = MediaPlayer.create(context, R.raw.syaseen);
             yaseen = 1;
             player.start();
-            btnyaseen.setBackgroundResource(R.drawable.stop);
-            btnmulk.setBackgroundResource(R.drawable.play);
-            btnrehman.setBackgroundResource(R.drawable.play);
-            btnwaqiya.setBackgroundResource(R.drawable.play);
-            btnfatiha.setBackgroundResource(R.drawable.play);
+            btnyaseen.setBackgroundResource(R.mipmap.pause);
+            btnmulk.setBackgroundResource(R.mipmap.play);
+            btnrehman.setBackgroundResource(R.mipmap.play);
+            btnwaqiya.setBackgroundResource(R.mipmap.play);
+            btnfatiha.setBackgroundResource(R.mipmap.play);
 
         }else{
             player.pause();
             yaseen = 0;
-            btnyaseen.setBackgroundResource(R.drawable.play);
+            btnyaseen.setBackgroundResource(R.mipmap.play);
         }
     }
     public void SurahMulk(){
@@ -177,17 +177,17 @@ public  void playerChecker(){
             player = MediaPlayer.create(context, R.raw.smulk);
             mulk = 1;
             player.start();
-            btnmulk.setBackgroundResource(R.drawable.stop);
-            btnyaseen.setBackgroundResource(R.drawable.play);
-            btnrehman.setBackgroundResource(R.drawable.play);
-            btnwaqiya.setBackgroundResource(R.drawable.play);
-            btnfatiha.setBackgroundResource(R.drawable.play);
+            btnmulk.setBackgroundResource(R.mipmap.pause);
+            btnyaseen.setBackgroundResource(R.mipmap.play);
+            btnrehman.setBackgroundResource(R.mipmap.play);
+            btnwaqiya.setBackgroundResource(R.mipmap.play);
+            btnfatiha.setBackgroundResource(R.mipmap.play);
 
         }else{
 
             player.pause();
             mulk = 0;
-            btnmulk.setBackgroundResource(R.drawable.play);
+            btnmulk.setBackgroundResource(R.mipmap.play);
         }
     }
     public void SurahWaqiya(){
@@ -199,16 +199,16 @@ public  void playerChecker(){
             player = MediaPlayer.create(context, R.raw.swaqya);
             waqiya = 1;
             player.start();
-            btnwaqiya.setBackgroundResource(R.drawable.stop);
-            btnmulk.setBackgroundResource(R.drawable.play);
-            btnrehman.setBackgroundResource(R.drawable.play);
-            btnyaseen.setBackgroundResource(R.drawable.play);
-            btnfatiha.setBackgroundResource(R.drawable.play);
+            btnwaqiya.setBackgroundResource(R.mipmap.pause);
+            btnmulk.setBackgroundResource(R.mipmap.play);
+            btnrehman.setBackgroundResource(R.mipmap.play);
+            btnyaseen.setBackgroundResource(R.mipmap.play);
+            btnfatiha.setBackgroundResource(R.mipmap.play);
 
         }else{
             player.pause();
             waqiya = 0;
-            btnwaqiya.setBackgroundResource(R.drawable.play);
+            btnwaqiya.setBackgroundResource(R.mipmap.play);
         }
     }
     public void SurahFatiha(){
@@ -220,16 +220,16 @@ public  void playerChecker(){
             player = MediaPlayer.create(context, R.raw.sfatiha);
             fatiha = 1;
             player.start();
-            btnfatiha.setBackgroundResource(R.drawable.stop);
-            btnmulk.setBackgroundResource(R.drawable.play);
-            btnrehman.setBackgroundResource(R.drawable.play);
-            btnwaqiya.setBackgroundResource(R.drawable.play);
-            btnyaseen.setBackgroundResource(R.drawable.play);
+            btnfatiha.setBackgroundResource(R.mipmap.pause);
+            btnmulk.setBackgroundResource(R.mipmap.play);
+            btnrehman.setBackgroundResource(R.mipmap.play);
+            btnwaqiya.setBackgroundResource(R.mipmap.play);
+            btnyaseen.setBackgroundResource(R.mipmap.play);
 
         }else{
             player.pause();
             fatiha = 0;
-            btnfatiha.setBackgroundResource(R.drawable.play);
+            btnfatiha.setBackgroundResource(R.mipmap.play);
         }
     }
     public void SurahRehman(){
@@ -241,16 +241,16 @@ public  void playerChecker(){
             player = MediaPlayer.create(context, R.raw.srahman);
             rehman = 1;
             player.start();
-            btnrehman.setBackgroundResource(R.drawable.stop);
-            btnmulk.setBackgroundResource(R.drawable.play);
-            btnfatiha.setBackgroundResource(R.drawable.play);
-            btnwaqiya.setBackgroundResource(R.drawable.play);
-            btnyaseen.setBackgroundResource(R.drawable.play);
+            btnrehman.setBackgroundResource(R.mipmap.pause);
+            btnmulk.setBackgroundResource(R.mipmap.play);
+            btnfatiha.setBackgroundResource(R.mipmap.play);
+            btnwaqiya.setBackgroundResource(R.mipmap.play);
+            btnyaseen.setBackgroundResource(R.mipmap.play);
 
         }else{
             player.pause();
             rehman = 0;
-            btnrehman.setBackgroundResource(R.drawable.play);
+            btnrehman.setBackgroundResource(R.mipmap.play);
         }
     }
     private void CopyReadAssets()

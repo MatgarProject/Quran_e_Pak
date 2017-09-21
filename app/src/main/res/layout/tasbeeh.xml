@@ -3,7 +3,7 @@
     xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/back"
+    android:background="@drawable/back2"
     android:orientation="vertical" >
     <Button
         android:layout_width="250dp"
@@ -12,8 +12,8 @@
         android:gravity="center"
         android:text="@string/Tap_Here_To_Sart"
         android:id="@+id/bAdd"
-        android:textColor="@color/textcolor"
-        android:background="@drawable/buttontasbeeh"
+        android:textColor="#bb006d"
+        android:background="#ffcfe9"
         android:layout_above="@+id/relativeLayout8"
         android:layout_centerHorizontal="true" />
 
@@ -43,7 +43,7 @@
             android:gravity="center"
             android:id="@+id/tvDisplay"
             android:text="0"
-            android:textColor="@color/background_text_color"
+            android:textColor="@color/background_text_color2"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
     </RelativeLayout>
@@ -60,22 +60,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ivresettasbeeh"
-            android:src="@drawable/resetwt"
-            android:layout_marginLeft="120dp"
+            android:src="@mipmap/reset"
             android:layout_centerVertical="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="98dp" />
+            android:layout_toLeftOf="@+id/ivsavetasbeeh"
+            android:layout_toStartOf="@+id/ivsavetasbeeh"
+            android:layout_marginRight="80dp"
+            android:layout_marginEnd="80dp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ivsavetasbeeh"
-            android:src="@drawable/savewt"
+            android:src="@mipmap/save"
             android:layout_alignTop="@+id/ivresettasbeeh"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:layout_marginRight="120dp" />
+
+
     </RelativeLayout>
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"

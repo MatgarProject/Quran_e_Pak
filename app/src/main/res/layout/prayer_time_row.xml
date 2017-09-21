@@ -10,7 +10,7 @@
         android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
-        android:textColor="@color/background_text_color"
+        android:textColor="@color/background_text_color2"
 		android:textSize="18sp" android:minWidth="15dp"
         />
 	<TextView
@@ -20,7 +20,7 @@
 		android:layout_height="wrap_content"
 		android:minWidth="100dp"
         android:layout_marginLeft="10dp"
-        android:textColor="@color/background_text_color"
+        android:textColor="@color/background_text_color2"
         android:layout_weight="2" />
 
     <ImageView
@@ -36,7 +36,7 @@
         android:id="@+id/time"
         android:layout_width="fill_parent"
 		android:textSize="16sp"
-        android:textColor="@color/background_text_color"
+        android:textColor="@color/background_text_color2"
         android:layout_height="wrap_content"
         android:text="~"
         />
@@ -45,6 +45,6 @@
 		android:layout_width="fill_parent"
         android:textSize="12dip"
 		android:layout_height="wrap_content"
-        android:textColor="@color/background_text_color"
+        android:textColor="@color/background_text_color2"
 		android:minWidth="5px" />
 </LinearLayout>

@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back"
+    android:background="@drawable/back2"
     android:orientation="vertical" >
 
 <!--     <include -->
@@ -18,7 +18,7 @@
         android:layout_height="fill_parent"
         android:layout_above="@+id/btn_load_more"
 
-         android:textColor="#e6cb7e"
+         android:textColor="#bb006d"
          >
     </ListView>
 
@@ -31,7 +31,7 @@
         android:layout_margin="5dp"
         android:background="@drawable/button"
         android:text="More" 
-        android:textColor="#e6cb7e"
+        android:textColor="#bb006d"
         android:visibility="visible"/>
 
 </RelativeLayout>
